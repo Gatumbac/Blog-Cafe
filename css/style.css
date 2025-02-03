@@ -35,8 +35,8 @@ a {
 
 h1,h2,h3,h4 {
     font-family: var(--fuenteTitulos);
-    font-weight: 400;
-    color: var(--blanco);
+    font-weight: bold;
+    line-height: 1.2;
 }
 
 h1 {
@@ -73,9 +73,6 @@ img {
     text-align: center;
 }
 
-.color-blanco {
-    color: var(--blanco);
-}
 
 /**Project*/
 .header {
@@ -86,21 +83,21 @@ img {
     background-position: center center;
 }
 
-.logo__bold {
-    font-weight: bold;
+.logo__titulo, .logo__bold, .navegacion__enlace {
+    color: var(--blanco);
 }
 
-.navegacion__enlace {
-    color: var(--blanco);
+.logo__titulo {
+    font-weight: 400;
+}
+
+.logo__bold {
+    font-weight: 700;
 }
 
 .header__titulo, .header__texto{
     text-align: center;
     color: var(--blanco);
-}
-
-.header__titulo {
-    font-weight: bold;
 }
 
 .headerTop {
@@ -117,13 +114,14 @@ img {
 }
 
 .navegacion__enlace {
-        font-size: 2rem;
+    font-size: 2rem;
 }
 
 .header__texto {
     line-height: 1;
 }
-@media (min-width: 300px) {
+
+@media (min-width: 1000px) {
     .header__texto {
         line-height: 1.5;
     }
@@ -147,5 +145,97 @@ img {
         margin: 13rem auto 0 auto;
     }
 }
+
+.contenedor__boton {
+    display: flex;
+    justify-content: center;
+}
+.entrada__boton {
+    margin-bottom: 2.5rem;
+    font-family: var(--fuenteTitulos);
+    text-align: center;
+    color: var(--blanco);
+    font-weight: bold;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    background-color: var(--negro);
+    padding: 1rem 3rem;
+    width: 100%;
+}
+
+
+.curso__bold {
+    font-weight: bold;
+}
+
+.cursos {
+    list-style: none;
+}
+
+.cursos__boton {
+    margin: 1rem 0 3rem 0;
+    font-family: var(--fuenteTitulos);
+    text-align: center;
+    color: var(--blanco);
+    font-weight: bold;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    background-color: var(--primario);
+    padding: 1rem 3rem;
+    width: 100%;
+}
+
+.curso__precio, .curso__cupo {
+    font-size: 2rem;
+}
+
+
+.footer {
+    background-color: var(--negro);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.navegacion__footer {
+    gap: 0.5rem;
+}
+
+@media (min-width: 768px) {
+    .footer {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .navegacion__footer {
+        gap: 3rem;
+    }
+
+    .contenido__principal {
+        display: flex;
+        flex-direction: row;
+        gap: 5rem;
+    }
+    .blog {
+        flex-basis: calc(65%)
+    }
+    .sidebar {
+        flex-basis: calc(35%);
+    }
+
+    .boton__final {
+        margin-bottom: 5rem;
+    }
+}    
+
+.curso1 {
+    border-bottom: 1px solid #cdcdcd;
+}
+
+
+
+
 
 
